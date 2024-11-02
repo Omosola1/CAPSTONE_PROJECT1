@@ -18,3 +18,20 @@ The Data is Capstone Project.csv and this is an open source data that can be fre
 - SQL - STructured Query Language for Querying the data
 - Microsoft PowerBI for Visualisation
 - Github For Portfolio Building
+
+### Data Cleaning and Preparations
+To achive a proper Data Cleaning and preparations, we perform the following action:
+1. Data loading and Inspection
+2. Handling missing variables
+3. Data Cleaning and formatting
+
+### Exploratory Data Analysis
+EDA involves the examining the Data From the retail store in order to get some fact such as  ;
+
+- Sales performance of the retail store
+- What is the overall sales trend in the store
+- Total sales by product, region, and month
+- Average sales per product
+- Total revenue by region
+- Highest Selling Products
+  
