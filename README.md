@@ -32,11 +32,17 @@ The Data is Capstone Project.csv and this is an open source data that can be fre
 2. For Analysis
 3. For data Visualization
 
-- SQL - Structured Query Language for Querying the data
----
-SQL [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-- Microsoft PowerBI for Visualisation
-- Github For Portfolio Building
+- SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+1. For Analysis
+
+- Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+1. For Data Cleaning
+2. For Analysis
+3. For data Visualization
+   
+- Github For Portfolio Building  🗃️
+  
+  Building up your portfolio as an Data Analyst
 
 ### Data Cleaning and Preparations
 ---
@@ -133,6 +139,13 @@ CROSS JOIN
 Tables	
 CHARTS
 
+CONTACT ADDRESS:
+Number 35 Olajesu street Agodo ,Ikotun. Lagos 🏠
+
+📧
+``` Email 
+omo_sola@yahoo.com
+```
 
 
 
