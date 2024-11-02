@@ -2,6 +2,20 @@
 
 ## Project 1: Sales Performance Analysis for a Retail Store
 
+[Project Overview](#project-overview)
+
+[Data Sources](#data-sources)
+
+[Tools Used](#tools-used)
+
+[Data Cleaning and Preparations](#data-cleaning-and-preparations)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Analysis](#data-analysis)
+
+[Data Visualization](#data-visualization)
+
 ### Project Overview
 ---
 This Data Analysis project is set to analyze the sales performance of a retail store. It will explore sales data to uncover key insights such as top-selling products, regional 
@@ -112,7 +126,11 @@ CROSS JOIN
     TotalSales ts;
 ```
 
-	
+### Data Visualization                  
+💹📊📉
+Tables	
+CHARTS
+
 
 
 
