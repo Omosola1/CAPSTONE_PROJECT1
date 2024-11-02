@@ -8,3 +8,13 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 
 ### Data Sources
 The Data is Capstone Project.csv and this is an open source data that can be freely downloaded from an open source online such as kaggle or FRED or any other data repository site.
+
+### Tools Used
+- Microsoft Excel [Download Here](https://wwwmicrosoft.com)
+1. For Data Cleaning
+2. For Analysis
+3. For data Visualization
+
+- SQL - STructured Query Language for Querying the data
+- Microsoft PowerBI for Visualisation
+- Github For Portfolio Building
