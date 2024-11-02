@@ -32,7 +32,9 @@ The Data is Capstone Project.csv and this is an open source data that can be fre
 2. For Analysis
 3. For data Visualization
 
-- SQL - STructured Query Language for Querying the data
+- SQL - Structured Query Language for Querying the data
+---
+SQL [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - Microsoft PowerBI for Visualisation
 - Github For Portfolio Building
 
