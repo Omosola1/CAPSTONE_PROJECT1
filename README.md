@@ -20,7 +20,7 @@ The Data is Capstone Project.csv and this is an open source data that can be fre
 - Github For Portfolio Building
 
 ### Data Cleaning and Preparations
-To achive a proper Data Cleaning and preparations, we perform the following action:
+To achive a proper Data Cleaning and preparations, I perform the following action:
 1. Data loading and Inspection
 2. Handling missing variables
 3. Data Cleaning and formatting
@@ -35,3 +35,78 @@ EDA involves the examining the Data From the retail store in order to get some f
 - Total revenue by region
 - Highest Selling Products
   
+### Data Analysis
+Here I include all basic lines of queries and some of the DAX expressions used during this analysis;
+
+```SQL
+select * from [dbo].[LITA_PROJECTA]
+
+----- retrieve the total sales for each product category----
+
+SELECT Product, SUM ([Total_Sales]) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+
+----find the number of sales transactions in each region----
+SELECT Region, COUNT(OrderID) AS Number_Of_Transactions
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Region
+ORDER BY Number_Of_Transactions DESC;
+
+----find the highest-selling product by total sales value----
+
+SELECT Product, SUM([Total_Sales]) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+ORDER BY TotalSales DESC; 
+
+----calculate total Sales per product----
+
+SELECT Product, SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(10, 2))) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+ORDER BY TotalSales DESC;
+
+---- calculate monthly sales totals for the current year.---
+
+SELECT OrderDate, SUM(Total_sales) AS monthlySales
+FROM [dbo].[LITA_PROJECTA]
+WHERE OrderDate between '2024-01-01' and '2024-12-31'
+GROUP BY OrderDate
+Order by OrderDate
+
+----find the top 5 customers by total purchase amount----
+
+SELECT TOP 5
+    [Customer_Id], 
+    SUM([Total_Sales]) AS TotalPurchase
+FROM 
+    [dbo].[LITA_PROJECTA]
+GROUP BY 
+    [Customer_Id]
+ORDER BY 
+    TotalPurchase DESC;
+
+	----calculate the percentage of total sales contributed by each region----
+
+	WITH RegionSales AS    
+	(SELECT  Region, 
+    SUM([Total_Sales]) AS RegionSales
+    FROM [dbo].[LITA_PROJECTA]
+    GROUP BY Region),
+TotalSales AS (
+    SELECT SUM([Total_Sales]) AS OverallTotalSales
+    FROM [dbo].[LITA_PROJECTA])
+SELECT 
+    rs.Region,
+    rs.RegionSales,
+    (rs.RegionSales * 100.0 / ts.OverallTotalSales) AS PercentageOfTotalSales
+FROM RegionSales rs
+CROSS JOIN 
+    TotalSales ts;
+```
+
+	
+
+
+
