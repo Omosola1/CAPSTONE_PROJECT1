@@ -4,7 +4,7 @@
 
 [Project Overview](#project-overview)
 
-[Data Sources](#data-sources)
+[Data](#data)
 
 [Tools Used](#tools-used)
 
@@ -21,16 +21,45 @@
 This Data Analysis project is set to analyze the sales performance of a retail store. It will explore sales data to uncover key insights such as top-selling products, regional 
 performance, and monthly sales trends. The goal is to analyse the various parameter in the data received .Then gather enough insight to make reasonable decisions which will enable us to tell compelling stories around our data from the findings gotten and to know the best performance from our Capstone Project data.
 
-### Data Sources
+### Data
 ---
-The Data is Capstone Project.csv and this is an open source data that can be freely downloaded from an open source online such as kaggle or FRED or any other data repository site.
+- **Data Sources**
+  
+  The Data is Capstone Project and this is a data that was freely downloaded from Ladies in Tech Africa (LITA) Canvas.
 
+- **Data Summary**
+
+   There are 7 Colomns in the dataset, which are the key indicators that give us insight into of the Sales data
+
+  a .**Order Date**- This is the exact date when the customer placed the order.
+
+  b. **Product** - The column lists the specific items that were purchased in the order.
+
+  c. **Region** - The column identifies the geographical area where the order originated.
+
+  d. **Quantity** - The Quantity column represents the number of units of a particular product that were purchased in a given order.
+
+  e. **Unit Price** - This refers to the price of a single unit of a product. - 
+
+  f. **Total Sales** - The column shows the total revenue generated from a specific order. It’s the result of multiplying the Quantity of the 
+         product(s) by their UnitPrice.
 ### Tools Used
 ---
 - Microsoft Excel [Download Here](https://wwwmicrosoft.com)
 1. For Data Cleaning
-2. For Analysis
-3. For data Visualization
+
+   The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
+3. For Analysis
+   
+   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+   - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
+   - Average Sales per Product was calculated using '**Averageif**'.
+   - Total Revenue by Region was calculated using '**Sumif**'.
+     
+5. For data Visualization
+   - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
+
+     
 
 - SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 1. For Analysis
