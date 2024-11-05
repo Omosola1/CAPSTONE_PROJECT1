@@ -45,34 +45,59 @@ performance, and monthly sales trends. The goal is to analyse the various parame
          product(s) by their UnitPrice.
 ### Tools Used
 ---
-- Microsoft Excel [Download Here](https://wwwmicrosoft.com)
-1. For Data Cleaning
+1. Microsoft Excel [Download Here](https://wwwmicrosoft.com)
+ 
+ a. **For Data Cleaning**
 
    The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
-3. For Analysis
+
+ b. **For Analysis**
    
    In order to give a proper data analysis of the information gotten from the dataset we explore it through:
    - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
    - Average Sales per Product was calculated using '**Averageif**'.
    - Total Revenue by Region was calculated using '**Sumif**'.
      
-5. For data Visualization
+ c. **For data Visualization**
    - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
 
      [LITA PROJECT1 PIVOT.xlsx](https://github.com/user-attachments/files/17630780/LITA.PROJECT1.PIVOT.xlsx)
 
 
-- SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-1. For Analysis
+2. SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-- Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
-1. For Data Cleaning
-2. For Analysis
-3. For data Visualization
+   - **For Analysis**
+
+ We wrote queries to extract key insights by. 
+-  retrieve the total sales for each product category.
+- find the number of sales transactions in each region.
+- find the highest-selling product by total sales value.
+- calculate total revenue per product.
+- calculate monthly sales totals for the current year.
+- find the top 5 customers by total purchase amount.
+- calculate the percentage of total sales contributed by each region.
+- identify products with no sales in the last quarter. 
+
+3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+ 
+  a. **For Data Cleaning**
+
+   The Dataset is upload into Power Bi and cleaned
    
-- Github For Portfolio Building  🗃️
+  b. **For Analysis**
+   
+   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+
+   - Creating New measures for: Average Sales, Product Count and Quantity count.
+   - Created a dashboard that visualizes the insights found in Excel and SQL. The
+     dashboard includes a sales overview, top-performing products, and 
+     regional breakdown using Text box, Cards, Map, Charts and a Slicer
+ 
+  c. **For data Visualization**
+   
+4. **Github For Portfolio Building ** 🗃️
   
-  Building up your portfolio as an Data Analyst
+  - Building up your portfolio as an Data Analyst
 
 ### Data Cleaning and Preparations
 ---
