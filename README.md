@@ -59,7 +59,8 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 5. For data Visualization
    - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
 
-     LITA PROJECT1 PIVOT.xlsx
+     [LITA PROJECT1 PIVOT.xlsx](https://github.com/user-attachments/files/17630780/LITA.PROJECT1.PIVOT.xlsx)
+
 
 - SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 1. For Analysis
