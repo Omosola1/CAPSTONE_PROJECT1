@@ -67,7 +67,7 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 2. SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
    - **For Analysis**
-
+  
  We wrote queries to extract key insights by. 
 -  retrieve the total sales for each product category.
 - find the number of sales transactions in each region.
@@ -78,125 +78,8 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 - calculate the percentage of total sales contributed by each region.
 - identify products with no sales in the last quarter.
 
-
-```
-SQL QUERY
-select * from [dbo].[LITA_PROJECTA]
-
------ retrieve the total sales for each product category----
-
-SELECT Product, SUM ([Total_Sales]) AS TotalSales
-FROM [dbo].[LITA_PROJECTA]
-GROUP BY Product
-
-----find the number of sales transactions in each region----
-SELECT Region, COUNT(OrderID) AS Number_Of_Transactions
-FROM [dbo].[LITA_PROJECTA]
-GROUP BY Region
-ORDER BY Number_Of_Transactions DESC;
-
-----find the highest-selling product by total sales value----
-
-SELECT Product, SUM([Total_Sales]) AS TotalSales
-FROM [dbo].[LITA_PROJECTA]
-GROUP BY Product
-ORDER BY TotalSales DESC; 
-
-----calculate total Sales per product----
-
-SELECT Product, SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(10, 2))) AS TotalSales
-FROM [dbo].[LITA_PROJECTA]
-GROUP BY Product
-ORDER BY TotalSales DESC;
-
----- calculate monthly sales totals for the current year.---
-
-SELECT OrderDate, SUM(Total_sales) AS monthlySales
-FROM [dbo].[LITA_PROJECTA]
-WHERE OrderDate between '2024-01-01' and '2024-12-31'
-GROUP BY OrderDate
-Order by OrderDate
-
-----find the top 5 customers by total purchase amount----
-
-SELECT TOP 5
-    [Customer_Id], 
-    SUM([Total_Sales]) AS TotalPurchase
-FROM 
-    [dbo].[LITA_PROJECTA]
-GROUP BY 
-    [Customer_Id]
-ORDER BY 
-    TotalPurchase DESC;
-
-	----calculate the percentage of total sales contributed by each region----
-
-	WITH RegionSales AS    
-	(SELECT  Region, 
-    SUM([Total_Sales]) AS RegionSales
-    FROM [dbo].[LITA_PROJECTA]
-    GROUP BY Region),
-TotalSales AS (
-    SELECT SUM([Total_Sales]) AS OverallTotalSales
-    FROM [dbo].[LITA_PROJECTA])
-SELECT 
-    rs.Region,
-    rs.RegionSales,
-    (rs.RegionSales * 100.0 / ts.OverallTotalSales) AS PercentageOfTotalSales
-FROM RegionSales rs
-CROSS JOIN 
-    TotalSales ts;
-```
-
-3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
- 
-  a. **For Data Cleaning**
-
-   The Dataset is upload into Power Bi and cleaned
-   
-  b. **For Analysis**
-   
-   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
-
-   - Creating New measures for: Average Sales, Product Count and Quantity count.
- 
-  c. **For data Visualization**
-
-  - Created a dashboard that visualizes the insights found in Excel and SQL. The
-     dashboard includes a sales overview, top-performing products, and 
-     regional breakdown using Text box, Cards, Map, Charts and a Slicer
-
-
-
-
-![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
-
-
-4. **Github For Portfolio Building ** 🗃️
-  
-  - Building up your portfolio as an Data Analyst
-
-### Data Cleaning and Preparations
----
-To achive a proper Data Cleaning and preparations, I perform the following action:
-1. Data loading and Inspection
-2. Handling missing variables
-3. Data Cleaning and formatting
-
-### Exploratory Data Analysis
----
-EDA involves the examining the Data From the retail store in order to get some fact such as  ;
-
-- Sales performance of the retail store
-- What is the overall sales trend in the store
-- Total sales by product, region, and month
-- Average sales per product
-- Total revenue by region
-- Highest Selling Products
-  
-### Data Analysis
----
-Here I include all basic lines of queries and some of the DAX expressions used during this analysis;
+     ---
+Here I include all basic lines of queries ;
 
 ```SQL
 select * from [dbo].[LITA_PROJECTA]
@@ -247,7 +130,7 @@ GROUP BY
 ORDER BY 
     TotalPurchase DESC;
 
-	----calculate the percentage of total sales contributed by each region----
+----calculate the percentage of total sales contributed by each region----
 
 	WITH RegionSales AS    
 	(SELECT  Region, 
@@ -266,10 +149,74 @@ CROSS JOIN
     TotalSales ts;
 ```
 
+
+
+3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+ 
+  a. **For Data Cleaning**
+
+   The Dataset is upload into Power BI and cleaned
+   
+  b. **For Analysis**
+   
+   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+
+   - Creating New measures for: Average Sales, Product Count and Quantity count.
+ 
+  c. **For data Visualization**
+
+  - Created a dashboard that visualizes the insights found in Excel and SQL. The
+     dashboard includes a sales overview, top-performing products, and 
+     regional breakdown using Text box, Cards, Map, Charts and a Slicer
+
+
+
+
+
+
+![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
+
+
+4. **Github For Portfolio Building ** 🗃️
+  
+  - Building up your portfolio as an Data Analyst
+
+### Data Cleaning and Preparations
+---
+To achive a proper Data Cleaning and preparations, I perform the following action:
+1. Data loading and Inspection
+2. Handling missing variables
+3. Data Cleaning and formatting
+
+### Exploratory Data Analysis
+---
+EDA involves the examining the Data From the retail store in order to get some fact such as  ;
+
+- Sales performance of the retail store
+- What is the overall sales trend in the store
+- Total sales by product, region, and month
+- Average sales per product
+- Total revenue by region
+- Highest Selling Products
+  
+### Data Analysis
+
+
+Data Analysis in Excel
+
+Data Analysis in SQL
+
+Data Analysis in Power BI
+
+
 ### Data Visualization                  
 💹📊📉
-Tables	
-CHARTS
+
+
+Data Visualization with Excel Pivot Table 
+
+Data Visualization With Power BI
+
 
 CONTACT ADDRESS:
 Number 35 Olajesu street Agodo ,Ikotun. Lagos 🏠
