@@ -76,7 +76,77 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 - calculate monthly sales totals for the current year.
 - find the top 5 customers by total purchase amount.
 - calculate the percentage of total sales contributed by each region.
-- identify products with no sales in the last quarter. 
+- identify products with no sales in the last quarter.
+
+
+```
+SQL QUERY
+select * from [dbo].[LITA_PROJECTA]
+
+----- retrieve the total sales for each product category----
+
+SELECT Product, SUM ([Total_Sales]) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+
+----find the number of sales transactions in each region----
+SELECT Region, COUNT(OrderID) AS Number_Of_Transactions
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Region
+ORDER BY Number_Of_Transactions DESC;
+
+----find the highest-selling product by total sales value----
+
+SELECT Product, SUM([Total_Sales]) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+ORDER BY TotalSales DESC; 
+
+----calculate total Sales per product----
+
+SELECT Product, SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(10, 2))) AS TotalSales
+FROM [dbo].[LITA_PROJECTA]
+GROUP BY Product
+ORDER BY TotalSales DESC;
+
+---- calculate monthly sales totals for the current year.---
+
+SELECT OrderDate, SUM(Total_sales) AS monthlySales
+FROM [dbo].[LITA_PROJECTA]
+WHERE OrderDate between '2024-01-01' and '2024-12-31'
+GROUP BY OrderDate
+Order by OrderDate
+
+----find the top 5 customers by total purchase amount----
+
+SELECT TOP 5
+    [Customer_Id], 
+    SUM([Total_Sales]) AS TotalPurchase
+FROM 
+    [dbo].[LITA_PROJECTA]
+GROUP BY 
+    [Customer_Id]
+ORDER BY 
+    TotalPurchase DESC;
+
+	----calculate the percentage of total sales contributed by each region----
+
+	WITH RegionSales AS    
+	(SELECT  Region, 
+    SUM([Total_Sales]) AS RegionSales
+    FROM [dbo].[LITA_PROJECTA]
+    GROUP BY Region),
+TotalSales AS (
+    SELECT SUM([Total_Sales]) AS OverallTotalSales
+    FROM [dbo].[LITA_PROJECTA])
+SELECT 
+    rs.Region,
+    rs.RegionSales,
+    (rs.RegionSales * 100.0 / ts.OverallTotalSales) AS PercentageOfTotalSales
+FROM RegionSales rs
+CROSS JOIN 
+    TotalSales ts;
+```
 
 3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
  
@@ -95,6 +165,9 @@ performance, and monthly sales trends. The goal is to analyse the various parame
   - Created a dashboard that visualizes the insights found in Excel and SQL. The
      dashboard includes a sales overview, top-performing products, and 
      regional breakdown using Text box, Cards, Map, Charts and a Slicer
+
+
+
 
 ![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
 
