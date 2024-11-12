@@ -208,6 +208,15 @@ Data Analysis in SQL
 
 Data Analysis in Power BI
 
+Total Sales by Product
+
+The Analysis Shows Shoe is the highest selling product with Total Sales of  #613,380 , this is followed by Shirt being the second highest selling product. While socks remains the lowest selling product.
+
+Highlight
+
+Shoe and Shirt are the highest selling product which makes them the star products which is the major source of revenue to the retail store. Stock and Jacket are the lowest selling Product and the Retail store will need find a way to promote these two product in order to improve the sales 
+
+![Uploading image.png…]()
 
 ### Data Visualization                  
 💹📊📉
