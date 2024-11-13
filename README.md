@@ -51,27 +51,8 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 
 3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
    
-  b. **For Analysis**
-   
-   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
-
-   - Creating New measures for: Average Sales, Product Count and Quantity count.
  
-  c. **For data Visualization**
-
-  - Created a dashboard that visualizes the insights found in Excel and SQL. The
-     dashboard includes a sales overview, top-performing products, and 
-     regional breakdown using Text box, Cards, Map, Charts and a Slicer
-
-
-
-
-
-
-![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
-
-
-4. **Github For Portfolio Building ** 🗃️
+ 4. Github For Portfolio Building  🗃️
   
   - Building up your portfolio as an Data Analyst
 
@@ -242,7 +223,22 @@ Data Visualization with Excel Pivot Table
 
 Data Visualization With Power BI
 
+  - Created a dashboard that visualizes the insights found in Excel and SQL. The
+     dashboard includes a sales overview, top-performing products, and 
+     regional breakdown using Text box, Cards, Map, Charts and a Slicer
 
+
+
+
+
+![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
+
+
+
+
+
+
+    
 CONTACT ADDRESS:
 Number 35 Olajesu street Agodo ,Ikotun. Lagos 🏠
 
