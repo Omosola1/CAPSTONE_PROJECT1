@@ -46,17 +46,8 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 ### Tools Used
 ---
 1. Microsoft Excel [Download Here](https://wwwmicrosoft.com)
+
  
- a. **For Data Cleaning**
-
-   The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
-
- b. **For Analysis**
-   
-   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
-   - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
-   - Average Sales per Product was calculated using '**Averageif**'.
-   - Total Revenue by Region was calculated using '**Sumif**'.
      
  c. **For data Visualization**
    - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
@@ -183,15 +174,27 @@ CROSS JOIN
 
 ### Data Cleaning and Preparations
 ---
+ 
+ **For Data Cleaning**
+
 To achive a proper Data Cleaning and preparations, I perform the following action:
 1. Data loading and Inspection
 2. Handling missing variables
 3. Data Cleaning and formatting
 
+The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
+
+
 ### Exploratory Data Analysis
 ---
-EDA involves the examining the Data From the retail store in order to get some fact such as  ;
+EDA involves the examining the Data From the retail store in order to get some fact.
+   
+In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+   - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
+   - Average Sales per Product was calculated using '**Averageif**'.
+   - Total Revenue by Region was calculated using '**Sumif**'.
 
+We examine the Data From the retail store in order to get some fact such as  ;
 - Sales performance of the retail store
 - What is the overall sales trend in the store
 - Total sales by product, region, and month
