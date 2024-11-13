@@ -47,18 +47,107 @@ performance, and monthly sales trends. The goal is to analyse the various parame
 ---
 1. Microsoft Excel [Download Here](https://wwwmicrosoft.com)
 
- 
-     
- c. **For data Visualization**
-   - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
-
-     [LITA PROJECT1 PIVOT.xlsx](https://github.com/user-attachments/files/17630780/LITA.PROJECT1.PIVOT.xlsx)
-
-
 2. SQL - Structured Query Language for Querying the data [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-   - **For Analysis**
+3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+   
+  b. **For Analysis**
+   
+   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+
+   - Creating New measures for: Average Sales, Product Count and Quantity count.
+ 
+  c. **For data Visualization**
+
+  - Created a dashboard that visualizes the insights found in Excel and SQL. The
+     dashboard includes a sales overview, top-performing products, and 
+     regional breakdown using Text box, Cards, Map, Charts and a Slicer
+
+
+
+
+
+
+![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
+
+
+4. **Github For Portfolio Building ** 🗃️
   
+  - Building up your portfolio as an Data Analyst
+
+### Data Cleaning and Preparations
+---
+ 
+ **For Data Cleaning**
+
+To achive a proper Data Cleaning and preparations, I perform the following action:
+1. Data loading and Inspection
+2. Handling missing variables
+3. Data Cleaning and formatting
+
+The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
+
+
+### Exploratory Data Analysis
+---
+EDA involves the examining the Data From the retail store in order to get some fact.
+
+**Excel**   
+In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+   - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
+   - Average Sales per Product was calculated using '**Averageif**'.
+   - Total Revenue by Region was calculated using '**Sumif**'.
+
+We examine the Data From the retail store in order to get some fact such as  ;
+- Sales performance of the retail store
+- What is the overall sales trend in the store
+- Total sales by product, region, and month
+- Average sales per product
+- Total revenue by region
+- Highest Selling Products
+
+**Power BI**
+     
+   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+
+   - Creating New measures for: Average Sales, Product Count and Quantity count.
+
+
+### Data Analysis
+---
+ **Excel**
+
+   - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
+
+
+      [LITA PROJECT1 PIVOT.xlsx](https://github.com/user-attachments/files/17630780/LITA.PROJECT1.PIVOT.xlsx)
+
+
+
+
+**Total Sales by Product**
+
+The Analysis Shows Shoe is the highest selling product with Total Sales of  #613,380 , this is followed by Shirt being the second highest selling product. While socks remains the lowest selling product.
+
+Highlight
+
+Shoe and Shirt are the highest selling product which makes them the star products which is the major source of revenue to the retail store. Stock and Jacket are the lowest selling Product and the Retail store will need find a way to promote these two product in order to improve the sales 
+
+**Total Sales by Region**
+
+There are four Regions in the Sale data East,North,South and West. The Southern Region has the highest Sales of  #927,820 and the  Pivot table and Visualizations shows that also shows that Western Region has the lowest sales . 
+
+
+![Uploading image.png…]()
+
+
+
+
+![Uploading image.png…]()
+
+
+**SQL**
+
  We wrote queries to extract key insights by. 
 -  retrieve the total sales for each product category.
 - find the number of sales transactions in each region.
@@ -142,95 +231,8 @@ CROSS JOIN
 
 
 
-3. Microsoft PowerBI for Visualisation [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
- 
-  a. **For Data Cleaning**
-
-   The Dataset is upload into Power BI and cleaned
-   
-  b. **For Analysis**
-   
-   In order to give a proper data analysis of the information gotten from the dataset we explore it through:
-
-   - Creating New measures for: Average Sales, Product Count and Quantity count.
- 
-  c. **For data Visualization**
-
-  - Created a dashboard that visualizes the insights found in Excel and SQL. The
-     dashboard includes a sales overview, top-performing products, and 
-     regional breakdown using Text box, Cards, Map, Charts and a Slicer
-
-
-
-
-
-
-![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
-
-
-4. **Github For Portfolio Building ** 🗃️
-  
-  - Building up your portfolio as an Data Analyst
-
-### Data Cleaning and Preparations
----
- 
- **For Data Cleaning**
-
-To achive a proper Data Cleaning and preparations, I perform the following action:
-1. Data loading and Inspection
-2. Handling missing variables
-3. Data Cleaning and formatting
-
-The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' dataset after cleaning the data by removing the duplicates.
-
-
-### Exploratory Data Analysis
----
-EDA involves the examining the Data From the retail store in order to get some fact.
-   
-In order to give a proper data analysis of the information gotten from the dataset we explore it through:
-   - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
-   - Average Sales per Product was calculated using '**Averageif**'.
-   - Total Revenue by Region was calculated using '**Sumif**'.
-
-We examine the Data From the retail store in order to get some fact such as  ;
-- Sales performance of the retail store
-- What is the overall sales trend in the store
-- Total sales by product, region, and month
-- Average sales per product
-- Total revenue by region
-- Highest Selling Products
-  
-### Data Analysis
-
-
-Data Analysis in Excel
-
-Data Analysis in SQL
 
 Data Analysis in Power BI
-
-
-**Total Sales by Product**
-
-The Analysis Shows Shoe is the highest selling product with Total Sales of  #613,380 , this is followed by Shirt being the second highest selling product. While socks remains the lowest selling product.
-
-Highlight
-
-Shoe and Shirt are the highest selling product which makes them the star products which is the major source of revenue to the retail store. Stock and Jacket are the lowest selling Product and the Retail store will need find a way to promote these two product in order to improve the sales 
-
-**Total Sales by Region**
-
-There are four Regions in the Sale data East,North,South and West. The Southern Region has the highest Sales of  #927,820 and the  Pivot table and Visualizations shows that also shows that Western Region has the lowest sales . 
-
-
-![Uploading image.png…]()
-
-
-
-
-![Uploading image.png…]()
 
 ### Data Visualization                  
 💹📊📉
