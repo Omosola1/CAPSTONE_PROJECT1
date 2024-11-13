@@ -74,12 +74,12 @@ The Capstone Sale Data Contains '50,000' raw data, how we were left witn '9921' 
 EDA involves the examining the Data From the retail store in order to get some fact.
 
 **Excel**   
-In order to give a proper data analysis of the information gotten from the dataset we explore it through:
+A. In order to give a proper data analysis of the information gotten from the dataset we explore it through:
    - By creating a New column for '**Total Sales**'. The new colomn is gotten calculated by multipy **'Quantity'** by **'Unit Price'** (UnitPrice*Quantity).
    - Average Sales per Product was calculated using '**Averageif**'.
    - Total Revenue by Region was calculated using '**Sumif**'.
 
-We examine the Data From the retail store in order to get some fact such as  ;
+B. We examine the Data From the retail store in order to get some fact such as  ;
 - Sales performance of the retail store
 - What is the overall sales trend in the store
 - Total sales by product, region, and month
@@ -91,7 +91,13 @@ We examine the Data From the retail store in order to get some fact such as  ;
      
    In order to give a proper data analysis of the information gotten from the dataset we explore it through:
 
-   - Creating New measures for: Average Sales, Product Count and Quantity count.
+   - Creating New measures for:
+     
+a. Average Sales
+
+b. Product Count
+
+c. Quantity count.
 
 
 ### Data Analysis
@@ -117,14 +123,6 @@ Shoe and Shirt are the highest selling product which makes them the star product
 **Total Sales by Region**
 
 There are four Regions in the Sale data East,North,South and West. The Southern Region has the highest Sales of  #927,820 and the  Pivot table and Visualizations shows that also shows that Western Region has the lowest sales . 
-
-
-![Uploading image.png…]()
-
-
-
-
-![Uploading image.png…]()
 
 
 **SQL**
