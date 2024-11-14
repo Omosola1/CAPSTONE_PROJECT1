@@ -16,6 +16,11 @@
 
 [Data Visualization](#data-visualization)
 
+[Results and Findings](#results-and-findings)
+
+[Recommendations](#recommendations)
+
+
 ### Project Overview
 ---
 This Data Analysis project is set to analyze the sales performance of a retail store. It will explore sales data to uncover key insights such as top-selling products, regional 
@@ -102,7 +107,8 @@ c. Quantity count.
 
 ### Data Analysis
 ---
- **Excel**
+
+The data provides total sales figures for six different product categories. Here’s an analysis of the sales distribution:
 
    - Pivot table is  use to summarize 'Total sales by product', 'Total sales by region', 'Total sales by month', 'Quantity by region', 'Quantity by product' and 'Total number of product sold'.
 
@@ -111,18 +117,57 @@ c. Quantity count.
 
 
 
+**Analysis of Total Sales by Product**
 
-**Total Sales by Product**
+Sales Distribution:
 
-The Analysis Shows Shoe is the highest selling product with Total Sales of  #613,380 , this is followed by Shirt being the second highest selling product. While socks remains the lowest selling product.
+The shoes category leads with a total of $613,380, accounting for about 29.2% of total sales.
+Shirts follow with $485,600, representing 23.1% of total sales.
+Hats generate $316,195, or approximately 15.1% of total sales.
+Gloves contribute $296,900, or about 14.1% of total sales.
+Jackets generate $208,230, or roughly 9.9% of total sales.
+Socks have the smallest share with $180,785, which is 8.6% of total sales.
+Sales Share Breakdown:
 
-Highlight
+The top two categories, Shoes and Shirts, dominate sales, making up 52.3% of the total sales. This indicates that these categories are key revenue drivers.
+The remaining categories (Hats, Gloves, Jackets, and Socks) together account for 47.7% of the total sales, with socks generating the least revenue.
 
-Shoe and Shirt are the highest selling product which makes them the star products which is the major source of revenue to the retail store. Stock and Jacket are the lowest selling Product and the Retail store will need find a way to promote these two product in order to improve the sales 
 
-**Total Sales by Region**
+**Analysis of Total Sales by Region**
 
-There are four Regions in the Sale data East,North,South and West. The Southern Region has the highest Sales of  #927,820 and the  Pivot table and Visualizations shows that also shows that Western Region has the lowest sales . 
+The table provides total sales figures across four regions. Let’s break down the sales distribution and analyze the performance by region:
+
+Sales Distribution:
+
+South leads with $927,820, accounting for about 44.2% of total sales.
+East follows with $485,925, representing 23.1% of total sales.
+North contributes $387,000, or about 18.4% of total sales.
+West has the lowest total sales at $300,345, which is 14.3% of the total sales.
+Regional Share Breakdown:
+
+South dominates the sales with nearly half of the total sales (44.2%), making it by far the most important region.
+The East region contributes a significant share (23.1%), while North (18.4%) and West (14.3%) both have comparatively lower shares. 
+
+**Analysis of Total Sales by Month**
+
+The table shows total sales by month, and we can observe clear patterns and trends over the year. Let’s break down the sales distribution and highlight key insights.
+
+Sales Distribution by Month:
+
+Top Performers:
+
+February leads with $546,300, accounting for 26.0% of total sales.
+July follows with $274,800, contributing 13.1% of total sales.
+January comes next with $248,000, representing 11.8% of total sales.
+June also performs strongly, generating $247,600, or 11.8% of total sales.
+
+Lowest Performers:
+
+September has the smallest sales at $34,720, contributing just 1.7% of total sales.
+December follows closely behind with $49,300, or 2.3% of total sales.
+April and March also underperform, generating $46,865 and $107,175, respectively.
+
+
 
 
 **SQL**
@@ -228,7 +273,6 @@ Data Visualization With Power BI
 
 
 
-
 ![PROJECT2 POWERBI](https://github.com/user-attachments/assets/b8f9b9bc-4c10-46a4-ace2-110d69c87ec3)
 
 
@@ -236,14 +280,36 @@ Data Visualization With Power BI
 
 
 
+### Results and Findings
+
+ **Total Sales by Product**
+ 
+Shoes are the standout performer, with nearly twice the sales of Shirts and more than twice the sales of Hats and Gloves. This suggests a strong demand or larger price point for shoes, or potentially greater marketing success.
+Socks have the lowest total sales, which may indicate lower customer interest, lower margins, or possibly a seasonal variation in demand.
+There is a general pattern where the higher-ticket items (Shoes, Shirts) perform better, while lower-ticket items like Jackets and Socks see reduced demand.
+
+**Total Sales by Region**
+
+The South region is the clear leader in total sales, contributing almost twice as much as the East region and significantly more than the North and West regions. This could be due to stronger demand, a larger customer base, or effective marketing in the South.
+West region has the smallest share of total sales, which could indicate lower market penetration, fewer sales opportunities, or less effective marketing strategies in that region.
+North and West regions have similar shares, but both trail far behind the South and East regions, indicating potential for improvement in these regions.
+
+**Total Sales by Month**
+February stands out as the highest-performing month, with nearly half a million dollars in sales. This could indicate a strong seasonal boost or a key marketing campaign running during this period.
+The months of July, January, and June all show solid sales figures, with these four months (Feb, Jul, Jan, Jun) accounting for over 60% of the total sales.
+September, December, April, and March show very weak sales, especially in September and December, which likely indicate lower sales during these months.
+August and October show a slight dip in sales compared to the earlier months but still contribute a reasonable amount to total sales.
+
+### Recommendations
+
+Socks have the lowest sales, and it may be worth investigating why they are underperforming. Are the prices too high? Is there sufficient variety or novelty? Consider conducting customer surveys or testing promotions to understand the reasons.
+Similarly, Jackets are underperforming compared to other products, and their sales could be seasonally affected. Consider bundling jackets with other products (like shirts) or launching targeted campaigns during colder seasons.
+
+The South region is performing strongly and represents nearly half of the total sales. It would be prudent to maintain and strengthen your efforts in this region. Consider increasing marketing spend, launching exclusive promotions, or expanding your product range to continue capitalizing on this success.
+Evaluate what is driving sales in the South—whether it’s specific products, promotions, or customer demographics—and look for ways to replicate this success in other regions.
     
-CONTACT ADDRESS:
-Number 35 Olajesu street Agodo ,Ikotun. Lagos 🏠
+### Conclusion
 
-📧
-``` Email 
-omo_sola@yahoo.com
-```
+While Shoes and Shirts are clearly the dominant product categories driving the business, there is room to improve the performance of Jackets and Socks through targeted promotions, innovation, and better customer understanding. Consider focusing on strengthening the high-performing categories while exploring ways to stimulate interest in underperforming products, especially in seasonally relevant markets.
 
-
-
+The South region is clearly the strongest performer, driving nearly half of the total sales, and should continue to be a key focus for marketing and expansion. However, there’s significant opportunity to improve performance in the West and North regions through tailored strategies, such as localized promotions, better market understanding, and increased customer engagement. By optimizing regional strategies, you can ensure a more balanced performance across all regions and capture untapped potential in the underperforming markets.
