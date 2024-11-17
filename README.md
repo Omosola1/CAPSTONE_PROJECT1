@@ -30,6 +30,7 @@ The goal of this project is to analyze the sales performance of a retail store u
 
 ### Data
 ---
+
 - **Data Sources**
   
   The Data is Capstone Project and this is a data that was freely downloaded from Ladies in Tech Africa (LITA) Canvas.
