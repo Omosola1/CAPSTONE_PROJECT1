@@ -26,8 +26,7 @@
 
 ### Project Overview
 ---
-This Data Analysis project is set to analyze the sales performance of a retail store. It will explore sales data to uncover key insights such as top-selling products, regional 
-performance, and monthly sales trends. The goal is to analyse the various parameter in the data received .Then gather enough insight to make reasonable decisions which will enable us to tell compelling stories around our data from the findings gotten and to know the best performance from our Capstone Project data.
+The goal of this project is to analyze the sales performance of a retail store using the provided sales data, uncover key insights, and create a detailed Excel report. The insights gained from this analysis will focus on important areas like top-selling products, regional performance, and monthly sales trends. Additionally, the final outcome will involve an interactive Power BI dashboard to present these findings in a dynamic, visually appealing format.
 
 ### Data
 ---
